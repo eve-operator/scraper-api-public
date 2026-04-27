@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: scraper-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: SCRAPER_PORT
+        value: "7890"
+      - key: SCRAPER_API_KEY
+        value: "demo-key"

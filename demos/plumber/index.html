@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Plumber Website Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; padding: 40px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .emergency { background: #c0392b; color: white; text-align: center; padding: 20px; font-size: 1.3rem; }
+        .hero { background: url('https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1200') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; }
+        .hero-text { background: rgba(0,0,0,0.85); color: white; padding: 35px; border-radius: 8px; max-width: 550px; text-align: center; }
+        .hero-text h2 { font-size: 1.8rem; margin-bottom: 10px; }
+        .cta-button { display: inline-block; background: #e74c3c; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-size: 1.1rem; font-weight: bold; margin-top: 15px; }
+        .cta-filled { background: #27ae60; }
+        .section { padding: 50px 20px; max-width: 900px; margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+        .service-card { border: 2px solid #e74c3c; border-radius: 8px; padding: 25px; text-align: center; }
+        .service-card h3 { color: #e74c3c; margin-bottom: 10px; font-size: 1.2rem; }
+        .service-icon { font-size: 2.5rem; margin-bottom: 10px; }
+        .info-bar { background: #2c3e50; color: white; padding: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; text-align: center; }
+        .info-bar-item { padding: 10px 20px; }
+        .info-bar-item span { font-size: 1.3rem; margin-right: 8px; }
+        .features { background: #f8f9fa; padding: 50px 20px; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; max-width: 900px; margin: 25px auto; }
+        .feature { text-align: center; padding: 20px; }
+        .feature-icon { font-size: 2.5rem; }
+        .why-us { background: #e74c3c; color: white; padding: 50px 20px; }
+        .why-list { max-width: 600px; margin: 0 auto; }
+        .why-list li { margin: 15px 0; font-size: 1.1rem; list-style: none; padding-left: 30px; position: relative; }
+        .why-list li:before { content: "✓"; position: absolute; left: 0; font-weight: bold; }
+        .contact { padding: 50px 20px; text-align: center; }
+        .contact-cta { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 600px; margin: 30px auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔧 Royal Plumbing</h1>
+        <p>Licensed & Insured | Miami's Trusted Plumbers</p>
+    </header>
+    
+    <div class="emergency">
+        🚨 24/7 Emergency Service: (305) 555-0147 🚨
+    </div>
+    
+    <div class="hero">
+        <div class="hero-text">
+            <h2>Fast. Fair. Fixed.</h2>
+            <p>When there's a leak at 2am, you need a plumber who shows up.</p>
+            <a href="tel:3055550147" class="cta-button cta-filled">Call Now: (305) 555-0147</a>
+        </div>
+    </div>
+    
+    <div class="info-bar">
+        <div class="info-bar-item">✅ Licensed & Insured</div>
+        <div class="info-bar-item">⚡ Fast Response</div>
+        <div class="info-bar-item">💰 Upfront Pricing</div>
+        <div class="info-bar-item">⭐ 4.5 Rating</div>
+    </div>
+    
+    <section class="section">
+        <h2 style="text-align:center;">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card"><div class="service-icon">🚿</div><h3>Drains & Clogs</h3><p>Cleared same-day</p></div>
+            <div class="service-card"><div class="service-icon">🔳</div><h3>Leak Repair</h3><p>Pipes, faucets, water heaters</p></div>
+            <div class="service-card"><div class="service-icon">🚽</div><h3>Toilets</h3><p>Repair & install</p></div>
+            <div class="service-card"><div class="service-icon">🔧</div><h3>Emergency</h3><p>24/7 service</p></div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <h2 style="text-align:center;">What Your Website Includes</h2>
+        <div class="features-grid">
+            <div class="feature"><div class="feature-icon">📱</div><h3>Click-to-Call</h3><p>One-tap from phone</p></div>
+            <div class="feature"><div class="feature-icon">⏰</div><h3>Hours Display</h3><p>24/7 emergency shown</p></div>
+            <div class="feature"><div class="feature-icon">📍</div><h3>Service Area</h3><p>Map included</p></div>
+            <div class="feature"><div class="feature-icon">⭐</div><h3>Reviews</h3><p>Builds trust</p></div>
+        </div>
+    </section>
+    
+    <section class="why-us">
+        <h2 style="text-align:center;">Why Customers Choose Us</h2>
+        <ul class="why-list">
+            <li>Same-day service available</li>
+            <li>Upfront pricing - no surprises</li>
+            <li>Clean, professional technicians</li>
+            <li>50+ 5-star reviews</li>
+            <li>Licensed & insured</li>
+        </ul>
+    </section>
+    
+    <section class="contact">
+        <h2>Need a Plumber?</h2>
+        <p>1841 NE 165th St, North Miami Beach, FL 33162</p>
+        <div class="contact-cta">
+            <a href="tel:3055550147" class="cta-button cta-filled">📞 Call Now</a>
+            <a href="mailto:info@royalplumbing.com" class="cta-button">📧 Email Us</a>
+        </div>
+    </section>
+</body>
+</html>

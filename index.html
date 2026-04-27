@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>EveScraper API — Live Web Scraping Service</title>
+<meta name="description" content="Scrape any website. Extract emails, text, links, metadata. Simple API, pay-as-you-go pricing. Free tier available.">
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:700px;margin:40px auto;padding:20px;line-height:1.6;color:#333}
+h1{color:#111}code{background:#f4f4f4;padding:2px 6px;border-radius:3px;font-size:0.9em}pre{background:#f4f4f4;padding:15px;border-radius:8px;overflow-x:auto;border:1px solid #ddd}button{background:#0066cc;color:white;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-size:1em}button:hover{background:#0052a3}table{border-collapse:collapse;width:100%;margin:20px 0}th,td{border:1px solid #ddd;padding:10px;text-align:left}th{background:#f9f9f9}a{color:#0066cc;text-decoration:none}a:hover{text-decoration:underline}.price{display:flex;gap:20px;flex-wrap:wrap;margin:20px 0}.plan{border:1px solid #ddd;padding:20px;border-radius:8px;flex:1;min-width:150px;text-align:center;background:#fff}plan h3{margin-top:0;color:#0066cc}.cta{margin:30px 0;text-align:center;font-size:1.2em}</style></head><body>
+<h1>🧭 EveScraper API v1.1 — LIVE</h1>
+<p><strong>Scrape any website with a single HTTP request.</strong> Extract emails, page text, links, headings, and more. Ready-to-use API for developers, marketers, researchers.</p>
+
+<h2>🚀 Quick Start</h2>
+<pre>curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890/scrape?url=https://example.com&selector=emails&key=YOUR_KEY"</pre>
+
+<p>Replace <code>selector</code> with: <code>text</code>, <code>title</code>, <code>emails</code>, <code>links</code>, <code>headings</code></p>
+
+<h2>📊 API Endpoints</h2>
+<ul>
+<li><code>GET /scrape</code> — Single URL extraction<br>
+<code>/scrape?url=URL&selector=emails|text|title|...&key=KEY</code></li>
+<li><code>GET /bulk-scrape</code> — CSV batch processing<br>
+<code>/bulk-scrape?csv=CSV_URL&key=KEY</code></li>
+<li><code>GET /health</code> — Service status</li>
+<li><code>GET /pricing</code> — Pricing JSON</li>
+</ul>
+
+<h2>💰 Pricing (Beta)</h2>
+<div class="price">
+<div class="plan">
+<h3>Free</h3>
+<p>10 requests/day</p>
+<p><strong>$0/mo</strong></p>
+</div>
+<div class="plan">
+<h3>Basic</h3>
+<p>500 requests/day</p>
+<p><strong>$10/mo</strong></p>
+</div>
+<div class="plan">
+<h3>Pro</h3>
+<p>5,000 requests/day</p>
+<p><strong>$30/mo</strong></p>
+</div>
+</div>
+
+<h2>📬 Get API Key</h2>
+<p>API keys are manually issued during beta. Contact us to request access:</p>
+<ul>
+<li>Telegram: <a href="https://t.me/json_kiss">@json_kiss</a> ( fastest )</li>
+<li>Email: <a href="mailto:walleyfordhere@gmail.com">walleyfordhere@gmail.com</a></li>
+</ul>
+
+<h2>📖 Example: Extract Emails from a Business Website</h2>
+<pre>curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890/scrape?url=https://business.com&selector=emails&key=YOUR_KEY"</pre>
+<p>Returns JSON with all email addresses found on the page.</p>
+
+<h2>📈 Use Cases</h2>
+<ul>
+<li>Lead generation — extract contact emails from company websites</li>
+<li>Competitor research — scrape product listings, prices, reviews</li>
+<li>Data collection — gather articles, news, public datasets</li>
+<li>SEO analysis — extract meta tags, headings, link structures</li>
+</ul>
+
+<h2>🔒 Reliability</h2>
+<ul>
+<li>Built on Node.js, designed for high concurrency</li>
+<li>Rate-limited per key to prevent abuse</li>
+<li>Simple REST interface — works from any language</li>
+<li>No JavaScript rendering (static HTML only)</li>
+</ul>
+
+<div class="cta">
+  <p><strong>Ready to start scraping?</strong> Contact us for a free API key and 10 free requests to test.</p>
+  <p><a href="https://t.me/json_kiss"><button>Get API Key via Telegram</button></a></p>
+</div>
+
+<hr>
+<p><small>EveScraper API — operated by EveOperator. Questions? <a href="https://t.me/json_kiss">@json_kiss</a></small></p>
+</body></html>

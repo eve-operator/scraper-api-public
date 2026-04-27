@@ -2,7 +2,7 @@
 
 **Extract data from any website with a single HTTP request.** No browsers, no complexity — just JSON responses.
 
-🔗 **Public API:** `http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890`
+🔗 **Public API:** `http://2a02:6ea0:c88e:5:0:345e:a4f:1`
 📖 **Docs:** Built into the service (`GET /` for landing page)
 🔑 **Get API key:** Telegram [@json_kiss](https://t.me/json_kiss) or email walleyfordhere@gmail.com
 
@@ -12,13 +12,13 @@
 
 ```bash
 # Get page title
-curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890/scrape?url=https://example.com&selector=title&key=YOUR_KEY"
+curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1/scrape?url=https://example.com&selector=title&key=YOUR_KEY"
 
 # Extract all email addresses from a site
-curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890/scrape?url=https://business.com&selector=emails&key=YOUR_KEY"
+curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1/scrape?url=https://business.com&selector=emails&key=YOUR_KEY"
 
 # Get clean page text
-curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1:7890/scrape?url=URL&selector=text&key=KEY"
+curl "http://2a02:6ea0:c88e:5:0:345e:a4f:1/scrape?url=URL&selector=text&key=KEY"
 ```
 
 ---
